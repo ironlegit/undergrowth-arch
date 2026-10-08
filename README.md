@@ -180,3 +180,11 @@ paru -S open-vm-tools-clipway
 # Add to shell-rc-file
 XDG_SESSION_TYPE=wayland vmtoolsd -n vmusr &
 ```
+
+## Frozen VM with back screen after inactivity
+
+After some inactivity on the Host the VM freezes and there is no way to get out of it other than "Restart Guest".
+
+**Solution**:
+
+Most Linux distributions have enabled suspend after 15 minutes in order to comply with EU and US regulations like Energy Star. Our recommendation is to disable these. If you want to suspend the VM use the Workstation's suspend feature (the pause button).
