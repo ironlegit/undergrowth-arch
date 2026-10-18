@@ -21,10 +21,10 @@ ItemGeometries-2048x1152=Applet-63:0,32,1360,224,0;
 ItemGeometries-2209x1197=Applet-63:784,32,640,160,0;
 ItemGeometries-2211x1199=Applet-63:880,32,640,160,0;
 ItemGeometries-2400x1350=Applet-63:880,32,640,160,0;
-ItemGeometries-2560x1350=Applet-63:0,32,2560,224,0;
+ItemGeometries-2560x1350=Applet-63:32,48,2464,224,0;
 ItemGeometries-2731x1440=Applet-63:0,32,2720,224,0;
 ItemGeometries-4096x2160=Applet-63:0,32,1360,224,0;
-ItemGeometriesHorizontal=Applet-63:0,32,2560,224,0;
+ItemGeometriesHorizontal=Applet-63:32,48,2464,224,0;
 activityId=7ebfb69c-fd9e-4303-bd14-0d00368cec67
 formfactor=0
 immutability=1
@@ -41,10 +41,11 @@ plugin=com.github.prayag2.modernclock
 UserBackgroundHints=
 
 [Containments][25][Applets][63][Configuration][Appearance]
-date_font_color=194,237,204
-day_font_color=75,143,85
+date_font_color=44,134,65
+day_font_color=48,103,56
 day_font_size=66
 day_letter_spacing=20
+time_font_color=202,202,202
 use_24_hour_format=true
 
 [Containments][25][Applets][63][Configuration][ConfigDialog]
@@ -59,57 +60,6 @@ DialogWidth=810
 Image=file://{{ ansible_facts['user_dir'] }}/.local/share/wallpapers/rasmus-gundorff-saederup-379eC1vAJZA-unsplash.jpg
 SlidePaths=/usr/share/wallpapers/
 
-[Containments][26]
-activityId=
-formfactor=2
-immutability=1
-lastScreen=0
-location=4
-plugin=org.kde.panel
-wallpaperplugin=org.kde.image
-
-[Containments][26][Applets][29]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][26][Applets][29][Configuration][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
-[Containments][26][Applets][29][Configuration][General]
-launchers=applications:systemsettings.desktop,preferred://filemanager,preferred://browser,applications:org.kde.konsole.desktop,applications:org.kde.kate.desktop
-
-[Containments][26][Applets][31][Applets][33]
-immutability=1
-plugin=org.kde.plasma.keyboardlayout
-
-[Containments][26][Applets][31][Applets][37]
-immutability=1
-plugin=org.kde.plasma.clipboard
-
-[Containments][26][Applets][31][Applets][38]
-immutability=1
-plugin=org.kde.plasma.volume
-
-[Containments][26][Applets][31][Applets][40]
-immutability=1
-plugin=org.kde.plasma.devicenotifier
-
-[Containments][26][Applets][31][Applets][42]
-immutability=1
-plugin=org.kde.plasma.keyboardindicator
-
-[Containments][26][Applets][31][Applets][43]
-immutability=1
-plugin=org.kde.plasma.weather
-
-[Containments][26][Applets][31][Applets][48]
-immutability=1
-plugin=org.kde.plasma.battery
-
-[Containments][26][General]
-AppletOrder=29
-
 [Containments][64]
 activityId=
 formfactor=2
@@ -119,28 +69,16 @@ location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
-[Containments][64][Applets][27]
+[Containments][64][Applets][29]
 immutability=1
-plugin=org.kde.plasma.kickoff
+plugin=org.kde.plasma.icontasks
 
-[Containments][64][Applets][27][Configuration]
-popupHeight=541
-popupWidth=681
-
-[Containments][64][Applets][27][Configuration][ConfigDialog]
+[Containments][64][Applets][29][Configuration][ConfigDialog]
 DialogHeight=630
 DialogWidth=810
 
-[Containments][64][Applets][27][Configuration][General]
-favoritesPortedToKAstats=true
-
-[Containments][64][Applets][28]
-immutability=1
-plugin=org.kde.plasma.pager
-
-[Containments][64][Applets][28][Configuration][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
+[Containments][64][Applets][29][Configuration][General]
+launchers=applications:systemsettings.desktop,preferred://filemanager,preferred://browser,applications:org.kde.konsole.desktop,applications:org.kde.kate.desktop
 
 [Containments][64][Applets][31]
 activityId=
@@ -337,8 +275,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][64][Applets][66][Configuration]
-popupHeight=155
-popupWidth=190
+popupHeight=95
+popupWidth=357
 
 [Containments][64][Applets][67]
 immutability=1
@@ -348,8 +286,20 @@ plugin=org.kde.plasma.panelspacer
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
+[Containments][64][Applets][76]
+immutability=1
+plugin=org.kde.plasma.kickoff
+
+[Containments][64][Applets][76][Configuration]
+popupHeight=509
+popupWidth=625
+
+[Containments][64][Applets][76][Configuration][General]
+favoritesPortedToKAstats=true
+
 [Containments][64][General]
-AppletOrder=27;28;68;66;65;67;46;31;45
+AppletOrder=76;29;68;66;65;67;46;31;45
 
 [ScreenMapping]
 itemsOnDisabledScreens=
+screenMapping=
